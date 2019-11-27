@@ -9,9 +9,15 @@ const routes = [
 		name: 'home',
 		component: () => import('@/views/ranking.vue')
 	},
+	{
+		path: '/profile',
+		name: 'profile',
+		component: () => import('@/views/profile.vue')
+	},
 ]
 
 const router = new VueRouter({
+	mode: 'history',
 	routes
 })
 
